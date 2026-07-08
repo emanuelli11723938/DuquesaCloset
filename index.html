@@ -348,7 +348,11 @@ li {
 }
 
 /* Em telas maiores: texto à esquerda, imagem à direita */
-@media (min-width: 900px) {
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+     }
   .section-grid {
     grid-template-columns: 1fr 420px;
     align-items: start;
